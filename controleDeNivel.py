@@ -3,7 +3,7 @@ from colorama import Fore, Style, init
 # Inicializa a biblioteca colorama
 init() 
 
-#*******Falta conferir e enviar ao professor******
+
 # Lista com os níveis e suas mensagens
 niveis_reservatorio = [
     "Nível 1 - Muito baixo (CRÍTICO)",
@@ -13,7 +13,7 @@ niveis_reservatorio = [
     "Nível 5 - Muito alto (ALERTA)"
 ]
 
-# Função para definir a cor conforme o nível
+# Função para definir a cor conforme o nível de agua muda de cor
 def definir_cor_mensagem(nivel):
     
     if nivel == 1:
@@ -29,7 +29,7 @@ def definir_cor_mensagem(nivel):
     else:
         return Fore.WHITE
     
-# Simulação de leitura do nível do reservatório
+# Simulação de leitura do nível do reservatório, pede ao usuário que informe o nível
 nivel_atual = int(input("Informe o nível do reservatório (1 a 5): "))
 
 # Verificação do nível do reservatório entre 1 e 5
